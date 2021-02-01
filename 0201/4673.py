@@ -8,7 +8,8 @@ result = list(range(1,10001))
 for i in range(1, 10001):
     if self_n(i) > 10000:
         pass
-    result[self_n(i)-1] = 0
+    else:
+        result[self_n(i)-1] = 0
 
 for i in result:
     if i != 0:
