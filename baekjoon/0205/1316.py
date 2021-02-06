@@ -5,5 +5,5 @@ for i in range(n):
     s = input()
     # for j in s:
         # if result.get(j, 0) == 0:
-s=1
+s=2
 
