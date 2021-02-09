@@ -7,4 +7,4 @@ while True:
     if (3*(i**2)-3*i+1) < n <= (3*((i+1)**2)-3*(i+1)+1):
         print(i+1)
         break
-    i += 1
+    i += 2
