@@ -1,16 +1,19 @@
 N = int(input())
-cnt_5 = 0
-result = -1
-if N//5 != 0 and N % 5 == 0:
+
+if N % 5 == 0:
     print(N//5)
 else:
-    while True:
-        if N % 3 == 0:
-            result = N//3 + cnt_5
-        N -= 5
-        cnt_5 += 1
-        if N < 0:
-            result = -1
-            break
-    print(result)
+    if (N%5)%3 == 0:
+        print(N//5 + (N%5)//3)
+    else:
+        r = N % 5
+        i = 1
+        while r <= N:
+            if r % 3 == 0:
+                print(N//5 - (i-1) + r // 3)
+                break
+            r += 5
+            i += 1
+        if r > N:
+            print(-1)
 
